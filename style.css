@@ -1,0 +1,619 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#050505;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.custom-navbar{
+    background:rgba(0,0,0,0.92);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255, 255, 255, 0.08);
+    height:72px;
+    display:flex;
+    align-items:center;
+    z-index:9999;
+}
+
+/* Desktop Logo */
+.desktop-logo{
+    color:#fff !important;
+    font-size:1.5rem;
+    font-weight:700;
+    text-decoration:none;
+}
+
+/* Nav Links */
+.navbar-nav .nav-link{
+    color:#d1d5db;
+    font-weight:500;
+    transition:0.3s;
+}
+.navbar-nav .nav-link.active{
+    color:#ffffff !important;
+    font-weight:700;
+}
+.navbar-nav .nav-link:hover{
+    color:#9f67ff;
+}
+
+.navbar-toggler{
+    border:none;
+    background: transparent;
+    padding: 5px;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/* FIX HAMBURGER ICON */
+.navbar-toggler-icon{
+    filter: invert(1);
+    width: 28px;
+    height: 28px;
+}
+
+/* Mobile Profile */
+.mobile-profile{
+    display:none;
+}
+
+.nav-profile-logo{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #8b5cf6;
+    box-shadow:0 0 15px rgba(139,92,246,.4);
+}
+
+/* Center Name */
+.nav-center-logo{
+    display:none;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding:110px 0 50px;
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(139,92,246,.15),
+        transparent 35%
+    );
+}
+
+.hero-row{
+    min-height:100vh;
+}
+
+.tag{
+    display:inline-block;
+    background:rgba(244, 241, 253, 0.12);
+    border:1px solid rgba(139,92,246,.25);
+    padding:10px 18px;
+    border-radius:40px;
+    color:#b78aff;
+    font-size:0.9rem;
+}
+
+.hero-title{
+    font-size:4rem;
+    font-weight:800;
+    margin-top:20px;
+}
+
+.gradient-text{
+    background:linear-gradient(
+        90deg,
+        #8b5cf6,
+        #2563eb
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.role-title{
+    font-size:2rem;
+    color:#b78aff;
+    margin-top:10px;
+}
+
+.hero-description{
+    margin-top:20px;
+    color:#cbd5e1;
+    line-height:1.9;
+    max-width:600px;
+}
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.custom-btn{
+    background:linear-gradient(
+        135deg,
+        #8b5cf6,
+        #2563eb
+    );
+    border:none;
+    border-radius:12px;
+    padding:14px 28px;
+    transition:0.3s;
+}
+
+.custom-btn:hover{
+    transform:translateY(-3px);
+}
+
+.profile-img{
+    width:100%;
+    max-width:380px;
+    border-radius:50%;
+    border:4px solid rgba(139,92,246,.3);
+    box-shadow:0 0 35px rgba(139,92,246,.2);
+}
+
+/* ===========================
+   SECTION SPACING
+=========================== */
+
+.section-padding{
+    padding:50px 0;
+}
+
+.section-title{
+    font-size:2.8rem;
+    font-weight:700;
+}
+
+.section-subtitle{
+    color:#94a3b8;
+    margin-top:8px;
+}
+
+/* Remove Big Gaps */
+#home,
+#about,
+#skills,
+#certifications,
+#projects,
+#contact{
+    margin:0;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about-image{
+    width:100%;
+    max-width:360px;
+    border-radius:25px;
+}
+
+.about-text{
+    color:#cbd5e1;
+    line-height:1.9;
+}
+
+.mini-card{
+    background:#101010;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+}
+
+.mini-card h4{
+    color:#8b5cf6;
+    font-weight:700;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skill-card{
+    background:#111111;
+    border-radius:24px;
+    padding:35px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(139,92,246,.15);
+}
+
+.skill-icon{
+    font-size:3rem;
+    color:#8b5cf6;
+    margin-bottom:18px;
+}
+
+/* ===========================
+   CERTIFICATIONS
+=========================== */
+
+.certificate-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificate-carousel{
+    display:flex;
+    overflow-x:auto;
+    gap:22px;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+    padding:12px 60px;
+    width:100%;
+}
+
+.certificate-carousel::-webkit-scrollbar{
+    display:none;
+}
+
+.certificate-card{
+    min-width:320px;
+    background:#111111;
+    border-radius:24px;
+    overflow:hidden;
+    text-decoration:none;
+    color:white;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-8px);
+}
+
+/* Replace old certificate-card img styles with this */
+.cert-icon-wrap {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+}
+
+.cert-icon-wrap i {
+    font-size: 5rem;
+    color: #8b5cf6;
+    transition: .3s;
+}
+
+.certificate-card:hover .cert-icon-wrap i {
+    color: #2563eb;
+    transform: scale(1.1);
+}
+
+.cert-preview {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background: #1a1a1a;
+}
+
+.certificate-card h5{
+    padding:18px;
+    text-align:center;
+}
+
+/* LEFT & RIGHT ARROWS FIX */
+.arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:52px;
+    height:52px;
+    border:none;
+    border-radius:50%;
+    background:#111;
+    color:#fff;
+    font-size:1.2rem;
+    cursor:pointer;
+    z-index:10;
+    transition:.3s;
+}
+
+.arrow:hover{
+    background:#8b5cf6;
+}
+
+.arrow.arrow-left{
+    left:-10px;
+}
+
+.arrow.arrow-right{
+    right:-10px;
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.project-card{
+    background:#111111;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.3s;
+    height:100%;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(139,92,246,.12);
+}
+
+.project-icon{
+    font-size:2.5rem;
+    color:#8b5cf6;
+    margin-bottom:20px;
+}
+
+.project-card p{
+    color:#cbd5e1;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact-form{
+    background:#111111;
+    border-radius:25px;
+    padding:35px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border-radius:14px;
+    border:1px solid #2b2b2b;
+    background:#1a1a1a;
+    color:white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:none;
+    border-color:#8b5cf6;
+}
+
+.contact-form button{
+    border:none;
+    border-radius:14px;
+    padding:14px;
+    font-weight:600;
+    background:linear-gradient(
+        135deg,
+        #8b5cf6,
+        #2563eb
+    );
+}
+
+/* Contact Social */
+.contact-social{
+    border-top:1px solid rgba(255,255,255,.08);
+    margin-top:28px;
+    padding-top:20px;
+}
+
+.connect-text{
+    text-align:center;
+    color:#94a3b8;
+    margin-bottom:20px;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:96px;
+    flex-wrap:nowrap;
+}
+
+.social-link{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:#1a1a1a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.social-link:hover{
+    background:#8b5cf6;
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:991px){
+
+    /* Hide desktop logo */
+    .desktop-logo{
+        display:none;
+    }
+
+    .custom-navbar .container{
+        position:relative;
+        height:72px;
+    }
+
+    /* Hamburger LEFT FIX */
+    .navbar-toggler{
+        position:absolute;
+        left:10px;
+        top:50%;
+        transform:translateY(-50%);
+        z-index:1002;
+    }
+
+    /* Center Name FIX */
+    .nav-center-logo{
+        display:block;
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        font-size:1rem;
+        font-weight:700;
+        color:#fff;
+        z-index:1001;
+        pointer-events:none;
+    }
+
+    /* Profile RIGHT FIX */
+    .mobile-profile{
+        display:block;
+        position:absolute;
+        right:10px;
+        top:50%;
+        transform:translateY(-50%);
+        z-index:1001;
+    }
+
+    /* MENU FIXED */
+    .navbar-collapse{
+        position:absolute;
+        top:72px;
+        left:0;
+        width:100%;
+        background:#080808;
+        padding:20px;
+        border-radius:0 0 20px 20px;
+        z-index:999;
+    }
+
+    /* Prevent Logo Sliding */
+    .custom-navbar{
+        overflow:visible;
+    }
+
+    .hero-section{
+        min-height:auto;
+        text-align:center;
+        padding-top:120px;
+        padding-bottom:30px;
+    }
+
+    .hero-row{
+        min-height:auto;
+    }
+
+    .hero-title{
+        font-size:2.4rem;
+    }
+
+    .role-title{
+        font-size:1.3rem;
+    }
+
+    .hero-description{
+        font-size:.95rem;
+        padding:0 12px;
+    }
+
+    /* Hide Hero Image Mobile */
+    .hero-section .profile-img{
+        display:none;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-buttons .btn{
+        width:180px;
+    }
+
+    /* Smaller Cert Card */
+    .certificate-card{
+        min-width:260px;
+    }
+
+    .certificate-card img{
+        height:180px;
+    }
+}
+
+/* Small Mobile */
+@media(max-width:576px){
+
+    .hero-title{
+        font-size:2rem;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .contact-form{
+        padding:25px;
+    }
+
+    /* Keep logos same row */
+    .social-icons{
+        gap:10px;
+        flex-wrap:nowrap;
+    }
+
+    .social-link{
+        width:42px;
+        height:42px;
+    }
+
+    .social-link i{
+        font-size:.9rem;
+    }
+}
