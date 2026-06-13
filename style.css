@@ -267,6 +267,13 @@ body{
    CERTIFICATIONS
 =========================== */
 
+.cert-category-title {
+    color: #8b5cf6;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
 .certificate-wrapper{
     position: relative;
     display: flex;
@@ -545,6 +552,11 @@ body{
         text-align:center;
         padding-top:120px;
         padding-bottom:30px;
+    }
+
+    .tag{
+        margin-top:35px;
+        display:inline-block;
     }
 
     .hero-row{

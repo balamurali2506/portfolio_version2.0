@@ -220,6 +220,7 @@ if (certificateSlider) {
     }
 }
 
+
 // ===============================
 // Navbar Background on Scroll
 // ===============================
